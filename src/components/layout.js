@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, See repository at
+          Visit repository @
           {` `}
           <a href="https://github.com/nipapan/security-client">Github</a>
         </footer>
