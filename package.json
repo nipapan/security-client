@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "bulma": "^0.8.0",
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",
     "prettier": "^1.19.1"
   },
@@ -37,7 +38,8 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "css-build": "node-sass --omit-source-map-url src/pages/mystyles.scss css/mystyles.css",
-    "css-watch": "npm run css-build -- --watch"
+    "css-watch": "npm run css-build -- --watch",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
